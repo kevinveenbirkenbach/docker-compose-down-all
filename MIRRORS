@@ -1,0 +1,4 @@
+git@github.com:kevinveenbirkenbach/docker-compose-down-all.git
+ssh://git@git.veen.world:2201/kevinveenbirkenbach/docker-compose-down-all.git
+ssh://git@code.infinito.nexus:2201/kevinveenbirkenbach/docker-compose-down-all.git
+https://pypi.org/project/docodol/

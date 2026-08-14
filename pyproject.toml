@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "docodol"
+version = "0.0.0"
+description = "Run 'docker compose down' in every first-level subdirectory."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Kevin Veen-Birkenbach", email = "kevin@veen.world" }]
+keywords = ["docker", "compose", "cli"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://www.veen.world/"
+Repository = "https://github.com/kevinveenbirkenbach/docker-compose-down-all"
+
+[project.scripts]
+docodol = "docodol.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/docodol"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
